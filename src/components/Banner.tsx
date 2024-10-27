@@ -3,12 +3,12 @@ import Chef from "../../public/chef.png";
 
 export default function Banner() {
   return (
-    <section className="flex flex-col-reverse md:flex-row items-center bg-gray-100 p-8 shadow-lg h-400 mt-20">
+    <section className="flex flex-col-reverse md:flex-row items-center bg-gray-100 p-8 shadow-lg h-400 mt-20 mr-20 ml-20">
       <div className="md:w-1/2 text-center md:text-left">
-        <h2 className="text-2xl font-bold text-gray-800 mb-4">
+        <h2 className="text-2xl font-bold text-gray-800 mb-4 ml-20">
           Conoce a la Chef Arantxa
         </h2>
-        <p className="text-lg text-gray-600">
+        <p className="ml-20 text-lg text-gray-600">
           Arantxa es una famosa chef de Mataporquera, ahora reconocida como chef
           con estrella Michelin en Cataluña. Su talento en la cocina abarca
           desde deliciosos canelones hasta asados perfectos. Sabe preparar de
