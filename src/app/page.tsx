@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import '@/app/globals.css';
 import Banner from "@/components/Banner";
 import CategoriesList from "@/components/CategoriesList";
+import LatestRecipes from "@/components/LatestRecipes";
 
 export default function Home() {
 
@@ -10,6 +11,7 @@ export default function Home() {
       <Header />
       <Banner />
       <CategoriesList />
+      <LatestRecipes />
     </div>
   );
 }
