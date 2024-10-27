@@ -1,26 +1,29 @@
+// tailwind.config.js
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}", // if using src directory
   ],
   theme: {
     extend: {
       colors: {
-        primary: '#FF5722', // Vibrant color for buttons or highlights
-        secondary: '#FFC107', // Accent color
-        background: '#FAFAFA', // Light background color
-        darkText: '#212121', // For darker text sections
-        lightText: '#757575', // Muted text for subtle sections
+        primary: "#FF5722",
+        secondary: "#FFC107",
+        background: "#FAFAFA",
+        darkText: "#212121",
+        lightText: "#757575",
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'], // For a clean, modern look
-        display: ['Playfair Display', 'serif'], // For headings, recipe titles, etc.
+        sans: ["Inter", "sans-serif"],
+        display: ["Playfair Display", "serif"],
       },
       spacing: {
-        18: '4.5rem', // Custom spacing for padding or margins
-        22: '5.5rem',
+        18: "4.5rem",
+        22: "5.5rem",
       },
     },
   },
   plugins: [],
-}
+};
