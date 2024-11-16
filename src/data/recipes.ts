@@ -1,7 +1,7 @@
 const Recipes = [
   {
     "id": 1,
-    "image": "https://example.com/image1.jpg",
+    "image": "",
     "name": "Tortilla de Patatas",
     "description": "Una receta tradicional española de tortilla con patatas y cebolla.",
     "time": "45 minutos",
@@ -22,7 +22,7 @@ const Recipes = [
   },
   {
     "id": 2,
-    "image": "https://example.com/image2.jpg",
+    "image": "",
     "name": "Gazpacho Andaluz",
     "description": "Sopa fría hecha con tomate y otras verduras, perfecta para el verano.",
     "time": "15 minutos",
@@ -45,7 +45,7 @@ const Recipes = [
   },
   {
     "id": 3,
-    "image": "https://example.com/image3.jpg",
+    "image": "",
     "name": "Paella de Mariscos",
     "description": "La famosa paella española con una mezcla de mariscos frescos.",
     "time": "1 hora y 20 minutos",
@@ -72,7 +72,7 @@ const Recipes = [
   },
   {
     "id": 4,
-    "image": "https://example.com/image4.jpg",
+    "image": "",
     "name": "Flan de Vainilla",
     "description": "Postre clásico de flan con un toque de vainilla.",
     "time": "1 hora",
@@ -95,7 +95,7 @@ const Recipes = [
   },
   {
     "id": 5,
-    "image": "https://example.com/image5.jpg",
+    "image": "",
     "name": "Ensalada Caprese",
     "description": "Ensalada fresca con tomate, mozzarella y albahaca.",
     "time": "10 minutos",
@@ -116,7 +116,7 @@ const Recipes = [
   },
   {
     "id": 6,
-    "image": "https://example.com/image6.jpg",
+    "image": "",
     "name": "Croquetas de Jamón",
     "description": "Croquetas crujientes rellenas de bechamel y jamón.",
     "time": "1 hora y 30 minutos",
@@ -142,7 +142,7 @@ const Recipes = [
   },
   {
     "id": 7,
-    "image": "https://example.com/image7.jpg",
+    "image": "",
     "name": "Sangría",
     "description": "Bebida refrescante con vino y frutas.",
     "time": "15 minutos",
@@ -164,7 +164,7 @@ const Recipes = [
   },
   {
     "id": 8,
-    "image": "https://example.com/image8.jpg",
+    "image": "",
     "name": "Churros con Chocolate",
     "description": "Deliciosos churros fritos con chocolate caliente.",
     "time": "40 minutos",
@@ -187,7 +187,7 @@ const Recipes = [
   },
   {
     "id": 9,
-    "image": "https://example.com/image9.jpg",
+    "image": "",
     "name": "Pisto Manchego",
     "description": "Plato típico manchego a base de verduras guisadas.",
     "time": "1 hora",
@@ -211,7 +211,7 @@ const Recipes = [
   },
   {
     "id": 10,
-    "image": "https://example.com/image10.jpg",
+    "image": "",
     "name": "Cocido Madrileño",
     "description": "Un plato de cuchara contundente con garbanzos, carne y verduras.",
     "time": "3 horas",
@@ -235,7 +235,7 @@ const Recipes = [
   },
   {
     "id": 11,
-    "image": "https://example.com/image11.jpg",
+    "image": "",
     "name": "Empanada Gallega",
     "description": "Empanada rellena de atún y pimientos, típica de Galicia.",
     "time": "2 horas",
@@ -260,7 +260,7 @@ const Recipes = [
   },
   {
     "id": 12,
-    "image": "https://example.com/image12.jpg",
+    "image": "",
     "name": "Salmorejo",
     "description": "Crema fría de tomate y pan, ideal como primer plato.",
     "time": "20 minutos",
@@ -281,7 +281,7 @@ const Recipes = [
   },
   {
     "id": 13,
-    "image": "https://example.com/image13.jpg",
+    "image": "",
     "name": "Pulpo a la Gallega",
     "description": "Pulpo cocido con patatas y pimentón, típico de Galicia.",
     "time": "1 hora y 30 minutos",
@@ -301,7 +301,7 @@ const Recipes = [
   },
   {
     "id": 14,
-    "image": "https://example.com/image14.jpg",
+    "image": "",
     "name": "Tarta de Santiago",
     "description": "Tarta de almendras típica de Galicia.",
     "time": "1 hora",
@@ -323,7 +323,7 @@ const Recipes = [
   },
   {
     "id": 15,
-    "image": "https://example.com/image15.jpg",
+    "image": "",
     "name": "Patatas Bravas",
     "description": "Tapa clásica de patatas fritas con salsa picante.",
     "time": "30 minutos",
