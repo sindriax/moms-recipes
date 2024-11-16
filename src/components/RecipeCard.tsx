@@ -1,30 +1,39 @@
-// components/RecipeCard.tsx
+import React from "react";
+import Link from "next/link";
 
-import Image, { StaticImageData } from 'next/image';
-
-interface RecipeCardProps {
-  image: string | StaticImageData;
-  title: string;
-  updatedAt: string;
+interface Recipe {
+  id: number;
+  image: string;
+  name: string;
+  time: string;
+  onClick: (id: number) => void;
 }
 
-function RecipeCard({ image, title, updatedAt }: RecipeCardProps) {
+interface RecipesCardProps {
+  recipe: Recipe;
+}
+
+const RecipesCard: React.FC<RecipesCardProps> = ({ recipe }) => {
+  // Add a check to prevent rendering if `recipe` is not defined
+  if (!recipe || !recipe.id) {
+    return null;
+  }
+
   return (
-    <div className="flex flex-col items-center p-4 rounded-lg shadow-md transition transform hover:scale-105 hover:shadow-lg">
-      <div className="w-full h-60 overflow-hidden rounded-lg mb-4 transition-transform duration-300 hover:scale-110">
-        <Image
-          src={image}
-          alt={title}
-          layout="responsive"
-          width={150}
-          height={150}
-          className="object-contain"
+    <Link href={`/recipes/${recipe.id}`}>
+      <div style={{ cursor: "pointer" }}>
+        <img
+          src={recipe.image}
+          alt={recipe.name}
+          style={{ width: "100%", height: "auto" }}
         />
+        <h2>{recipe.name}</h2>
+        <p>
+          <strong>Tiempo:</strong> {recipe.time}
+        </p>
       </div>
-      <h3 className="text-xl font-semibold text-gray-900">{title}</h3>
-      <p className="text-gray-500 text-sm">Updated on {updatedAt}</p>
-    </div>
+    </Link>
   );
-}
+};
 
-export default RecipeCard;
+export default RecipesCard;
