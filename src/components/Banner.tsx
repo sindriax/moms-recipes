@@ -1,9 +1,16 @@
+"use client";
 import Image from "next/image";
-import Chef from "../../public/chefcropped.png";
+import Chef from "../../public/chef.png";
+import { motion } from "framer-motion";
 
 export default function Banner() {
   return (
-    <section className="flex flex-col-reverse md:flex-row items-center bg-gray-100 p-8 shadow-lg h-400 mt-20 mr-20 ml-20">
+    <motion.section
+      className="flex flex-col-reverse md:flex-row items-center bg-gray-100 p-8 shadow-lg h-400 mt-20 mr-20 ml-20"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+    >
       <div className="md:w-1/2 text-center md:text-left">
         <h2 className="text-2xl font-bold text-gray-800 mb-4 ml-20">
           Conoce a la Chef Arantxa
@@ -18,13 +25,8 @@ export default function Banner() {
       </div>
 
       <div className="md:w-1/2 flex justify-center md:justify-end mt-6 md:mt-0">
-        <Image
-          src={Chef}
-          alt="Chef Arantxa"
-          height={600}
-          // className="rounded-full"
-        />
+        <Image src={Chef} alt="Chef Arantxa" height={600} />
       </div>
-    </section>
+    </motion.section>
   );
 }

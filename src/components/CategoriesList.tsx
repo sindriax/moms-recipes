@@ -1,3 +1,4 @@
+"use client";
 import brekkie from "../../public/brekkie.png";
 import vegan from "../../public/vegan.png";
 import meat from "../../public/meat.png";
@@ -6,7 +7,22 @@ import sushi from "../../public/sushi.png";
 import choco from "../../public/choco.png";
 
 import { StaticImageData } from "next/image";
+import { motion } from "framer-motion";
 import CategoryCard from "./CategoryCard";
+
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: { x: -50, opacity: 0 },
+  visible: { x: 0, opacity: 1 },
+};
 
 interface Category {
   icon: StaticImageData;
@@ -34,16 +50,23 @@ function CategoriesList() {
       </div>
 
       <div className="flex justify-center w-100 h-40">
-        <div className="flex flex-wrap space-x-4 w-100">
+        <motion.div
+          className="flex flex-wrap space-x-4 w-100"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+        >
           {categories.map((category, index) => (
-            <CategoryCard
-              key={index}
-              icon={category.icon}
-              label={category.label}
-              color={category.color}
-            />
+            <motion.div key={index} variants={cardVariants}>
+              <CategoryCard
+                icon={category.icon}
+                label={category.label}
+                color={category.color}
+              />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
