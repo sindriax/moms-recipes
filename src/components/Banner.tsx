@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Chef from "../../public/chef.png";
+import Chef from "../../public/chefcropped.png";
 
 export default function Banner() {
   return (
@@ -21,8 +21,8 @@ export default function Banner() {
         <Image
           src={Chef}
           alt="Chef Arantxa"
-          height={800}
-          className="rounded-full"
+          height={600}
+          // className="rounded-full"
         />
       </div>
     </section>

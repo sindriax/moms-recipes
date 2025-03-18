@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../../public/Cocinita1.png";
+import Logo from "../../public/final.png";
 
 function Header() {
   return (
-    <header className="w-full h-[10vh] flex items-center">
+    <header className="w-full h-[14vh] flex items-center">
       <div className="ml-8 mt-4">
         <Image src={Logo} alt="Cocinita" height={90} />
       </div>
