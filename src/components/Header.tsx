@@ -27,6 +27,11 @@ function Header() {
             </Link>
           </li>
           <li>
+            <Link href="/shop" className="text-gray-800 hover:text-blue-500">
+              Tienda
+            </Link>
+          </li>
+          <li>
             <Link href="/contact" className="text-gray-800 hover:text-blue-500">
               Contacto
             </Link>
