@@ -1,38 +1,41 @@
 const Items = [
   {
     id: 1,
-    name: "Professional Chef Knife",
+    name: "El Delantal Mágico Anti-Manchas",
     description:
-      "High-quality stainless steel chef knife, perfect for precise cutting and chopping",
-    price: 89.99,
-    image: "/images/chef-knife.jpg",
+      "Delantal premium resistente a salpicaduras, con bolsillos amplios y ajuste perfecto. ¡Cocina con estilo y mantén tu ropa impecable!",
+    price: 16.5,
+    image: "/images/shop/delantal.png",
   },
   {
     id: 2,
-    name: "Non-stick Cooking Pan",
-    description: "28cm ceramic non-stick frying pan with ergonomic handle",
-    price: 45.99,
-    image: "/images/cooking-pan.jpg",
+    name: "Agarraderas Térmicas Profesionales",
+    description:
+      "Set de agarraderas acolchadas resistentes al calor hasta 250°C. Protege tus manos mientras cocinas con seguridad y comodidad.",
+    price: 12.99,
+    image: "/images/shop/agarraderas.png",
   },
   {
     id: 3,
-    name: "Stand Mixer",
+    name: "Set BBQ de Acero Inoxidable",
     description:
-      "5-speed stand mixer with 5L stainless steel bowl, perfect for baking",
+      "Batidora de pie con 5 velocidades y bowl de acero inoxidable de 5L. Perfecta para masas, merengues y todo tipo de preparaciones.",
     price: 199.99,
-    image: "/images/stand-mixer.jpg",
+    image: "/images/shop/setbbq.jpeg",
   },
   {
     id: 4,
-    name: "Bamboo Cutting Board",
-    description: "Large bamboo cutting board with juice groove and handles",
+    name: "Tabla de Corte Bambú Premium",
+    description:
+      "Tabla de corte ecológica de bambú con canal para líquidos y asas ergonómicas. Durable y antibacterial.",
     price: 29.99,
     image: "/images/cutting-board.jpg",
   },
   {
     id: 5,
-    name: "Silicone Spatula Set",
-    description: "Set of 4 heat-resistant silicone spatulas in different sizes",
+    name: "Set de Espátulas Silicona Elite",
+    description:
+      "Juego de 4 espátulas de silicona premium resistentes al calor. Diferentes tamaños para todas tus necesidades culinarias.",
     price: 15.99,
     image: "/images/spatula-set.jpg",
   },
