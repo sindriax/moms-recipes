@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Recipes from "../../data/recipes"; // Adjust the path if necessary
+import Recipes from "../../data/recipes";
 import RecipesDetails from "@/components/RecipeDetail";
 import RecipesCard from "@/components/RecipeCard";
 
