@@ -6,7 +6,7 @@ interface Recipe {
   id: number;
   image: string;
   name: string;
-  description: string;
+  description: string | string[];
   time: string;
   ingredients: string[];
   steps: string[];
@@ -47,7 +47,11 @@ const RecipesDetails: React.FC<RecipesDetailsProps> = ({ recipe }) => {
           <h3 className="text-2xl font-semibold text-gray-800 mb-4">
             Ingredientes:
           </h3>
-          <ul className={`list-disc pl-6 mb-6 ${recipe.ingredients.length > 5 ? "grid grid-cols-2 gap-x-4" : ""}` }>
+          <ul
+            className={`list-disc pl-6 mb-6 ${
+              recipe.ingredients.length > 5 ? "grid grid-cols-2 gap-x-4" : ""
+            }`}
+          >
             {recipe.ingredients.map((ingredient, index) => (
               <li key={index} className="text-gray-700 text-lg mb-1">
                 {ingredient}
