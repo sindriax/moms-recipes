@@ -25,19 +25,27 @@ const Items = [
   },
   {
     id: 4,
-    name: "Tabla de Corte Bambú Premium",
+    name: "Cubre-Jamón",
     description:
-      "Tabla de corte ecológica de bambú con canal para líquidos y asas ergonómicas. Durable y antibacterial.",
-    price: 29.99,
-    image: "/images/cutting-board.jpg",
+      "Cubierta oficial que protege tu jamón serrano de las miradas curiosas y el polvo.",
+    price: 13.99,
+    image: "/images/shop/jamon.jpeg",
   },
   {
     id: 5,
-    name: "Set de Espátulas Silicona Elite",
+    name: "Tupper para llevar al trabajo",
     description:
-      "Juego de 4 espátulas de silicona premium resistentes al calor. Diferentes tamaños para todas tus necesidades culinarias.",
-    price: 15.99,
-    image: "/images/spatula-set.jpg",
+      "Tupper con tapa hermética, ideal para transportar comidas sin derrames ni mezclas de olores.",
+    price: 9.99,
+    image: "/images/shop/tupper.jpeg",
+  },
+  {
+    id: 6,
+    name: "Tupper para llevar al trabajo",
+    description:
+      "Tupper con tapa hermética, ideal para transportar comidas sin derrames ni mezclas de olores.",
+    price: 9.99,
+    image: "/images/shop/tupper.jpeg",
   },
 ];
 

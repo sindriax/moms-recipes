@@ -1,8 +1,7 @@
 const Recipes = [
   {
     id: 1,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/lentejas.png",
     name: "Lentejas",
     description: [
       "Deliciosas lentejas para los días más fríos, mucho más ricas con Morcilla de Cantabria!",
@@ -18,8 +17,7 @@ const Recipes = [
   },
   {
     id: 2,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/mermelada_pimiento.png",
     name: "Mermelada de pimientos",
     description: [
       "Uno de los platos favoritos de los fans de Arancita. Aperitivo que nunca falla si tienes tanta suerte de ser invitado a uno de sus festines!",
@@ -35,8 +33,7 @@ const Recipes = [
   },
   {
     id: 3,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/brazo.png",
     name: "Tarta Red Velvet",
     description: ["Una tarta suave y deliciosa, ideal para celebraciones."],
     time: "60'",
@@ -64,8 +61,7 @@ const Recipes = [
   },
   {
     id: 4,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/croquetas_bonitas.png",
     name: "Croquetas de jamón",
     description: [
       "Croquetas crujientes por fuera y suaves por dentro, perfectas para compartir.",
@@ -89,8 +85,7 @@ const Recipes = [
   },
   {
     id: 5,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/canelones.png",
     name: "Canelones",
     description: ["Canelones tradicionales, jugosos y llenos de sabor."],
     time: "60'",
@@ -104,8 +99,7 @@ const Recipes = [
   },
   {
     id: 6,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/lasana.png",
     name: "Lasaña",
     description: ["Lasaña clásica, cremosa y llena de sabor casero."],
     time: "60'",
@@ -127,8 +121,7 @@ const Recipes = [
   },
   {
     id: 7,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/berenjena.png",
     name: "Berenjena rellena",
     description: ["Plato ligero y nutritivo, ideal para una comida rápida."],
     time: "40'",
@@ -148,8 +141,7 @@ const Recipes = [
   },
   {
     id: 8,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/arroz_carne.png",
     name: "Arroz con carne",
     description: ["Arroz sabroso y reconfortante, ideal para cualquier día."],
     time: "45'",
@@ -169,8 +161,7 @@ const Recipes = [
   },
   {
     id: 9,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/paella_bonita.png",
     name: "Paella",
     description: ["Paella tradicional con un delicioso sabor a mar."],
     time: "50'",
@@ -194,8 +185,7 @@ const Recipes = [
   },
   {
     id: 10,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/cocido_garbanzos.png",
     name: "Cocido",
     description: ["Plato tradicional español perfecto para días fríos."],
     time: "120'",
@@ -209,8 +199,7 @@ const Recipes = [
   },
   {
     id: 11,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/sopa.png",
     name: "Sopa con pilotes",
     description: ["Sopa reconfortante ideal para cualquier época del año."],
     time: "35'",
@@ -224,8 +213,7 @@ const Recipes = [
   },
   {
     id: 12,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/xato_romesco.png",
     name: "Xato romesco",
     description: ["Ensalada fresca y mediterránea con un toque especial."],
     time: "20'",
@@ -245,8 +233,7 @@ const Recipes = [
   },
   {
     id: 13,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/bacalao_tomate_ensalada.png",
     name: "Ensalada de tomato y bacalao",
     description: ["Plato sencillo y delicioso, ideal como entrante."],
     time: "15'",
@@ -259,8 +246,7 @@ const Recipes = [
   },
   {
     id: 14,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/ensalada_alubias.png",
     name: "Ensalada de alubias",
     description: ["Ensalada nutritiva y rápida, perfecta como guarnición."],
     time: "10'",
@@ -279,8 +265,7 @@ const Recipes = [
   },
   {
     id: 15,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/ceviche.png",
     name: "Ceviche de berberechos",
     description: ["Ceviche refrescante y original para sorprender."],
     time: "15'",
@@ -300,8 +285,7 @@ const Recipes = [
   },
   {
     id: 16,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/pulpo_ceviche_burrata.png",
     name: 'Menú "Impresionalos": Pulpo a la gallega, ceviche de berberecho, enselada de tomate, burrata y pesto.',
     description: [],
     time: "",
@@ -310,8 +294,7 @@ const Recipes = [
   },
   {
     id: 17,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/burrata_ceviche.png",
     name: "Menú Healthy: Gazpacho con pepino y berenjena rellena",
     description: [],
     time: "",
@@ -320,8 +303,7 @@ const Recipes = [
   },
   {
     id: 18,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/pizza_calabacin.png",
     name: "Pizza de calabacín",
     description: ["Pizza alternativa y saludable para disfrutar sin culpa."],
     time: "30'",
@@ -344,8 +326,7 @@ const Recipes = [
   },
   {
     id: 19,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/pasta_calabacin.png",
     name: "Pasta de calabacín",
     description: ["Plato ligero y rápido ideal para comidas saludables."],
     time: "20'",
@@ -359,8 +340,7 @@ const Recipes = [
   },
   {
     id: 20,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/burrata.png",
     name: "Ensalada de burrata",
     description: ["Ensalada fresca y cremosa perfecta para cualquier día."],
     time: "10'",
@@ -381,8 +361,7 @@ const Recipes = [
   },
   {
     id: 21,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/panellets_bonito_2.png",
     name: "Panellets",
     description: ["Dulces tradicionales para la festividad catalana."],
     time: "30'",
@@ -402,8 +381,7 @@ const Recipes = [
   },
   {
     id: 22,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/tarta_60_papa.png",
     name: "Tarta de cumpleaños ",
     description: ["Pastel especial para celebraciones."],
     time: "60'",
@@ -423,8 +401,7 @@ const Recipes = [
   },
   {
     id: 23,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/mona_chocolate.png",
     name: "Mona chocolate",
     description: ["Mona tradicional para Pascua."],
     time: "20'",
@@ -445,8 +422,7 @@ const Recipes = [
   },
   {
     id: 24,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/bizcocho.png",
     name: "Bizcocho",
     description: ["Bizcocho casero perfecto para desayunos."],
     time: "40'",
@@ -466,8 +442,7 @@ const Recipes = [
   },
   {
     id: 25,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/sopa_adelgazar.png",
     name: "Sopa healthy",
     description: ["Sopa ligera y nutritiva."],
     time: "30'",
@@ -490,8 +465,7 @@ const Recipes = [
   },
   {
     id: 26,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/lomo_sal.png",
     name: "Lomo a la sal",
     description: ["Receta sencilla para una carne sabrosa."],
     time: "90'",
@@ -504,8 +478,7 @@ const Recipes = [
   },
   {
     id: 27,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/pisto.png",
     name: "Pisto",
     description: ["Clásico acompañante o plato principal español."],
     time: "30'",
@@ -528,8 +501,7 @@ const Recipes = [
   },
   {
     id: 28,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/codillo.png",
     name: "Codillo con patatas",
     description: ["Plato contundente y delicioso para días fríos."],
     time: "120'",
@@ -544,8 +516,7 @@ const Recipes = [
   },
   {
     id: 29,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/brazo.png",
     name: "Brazo de gitano red velvet",
     description: [
       "El brazo de gitano más elegante para sorprender a tus comensales!",
@@ -573,8 +544,7 @@ const Recipes = [
   },
   {
     id: 30,
-    image:
-      "https://www.bylena.com/images/uploaded/1920x_Paella-cu-fructe-de-mare-870.jpg",
+    image: "/images/recipes/hojaldre_nata.png",
     name: "Pastelitos de hodaldre con nata",
     description: ["El postre perfecto para los amantes de la nata."],
     time: "35'",
