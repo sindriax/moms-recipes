@@ -41,11 +41,11 @@ const Items = [
   },
   {
     id: 6,
-    name: "Tupper para llevar al trabajo",
+    name: "Tote Bag Ecológica Multiusos",
     description:
-      "Tupper con tapa hermética, ideal para transportar comidas sin derrames ni mezclas de olores.",
-    price: 9.99,
-    image: "/images/shop/tupper.jpeg",
+      "Bolsa tote de algodón 100% ecológico, resistente y espaciosa. Ideal para compras, paseos o llevar tus objetos personales con estilo.",
+    price: 14.99,
+    image: "/images/shop/tote.png",
   },
 ];
 

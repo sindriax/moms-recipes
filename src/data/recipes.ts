@@ -1,5 +1,107 @@
 const Recipes = [
   {
+    id: 9,
+    image: "/images/recipes/paella_bonita.png",
+    name: "Paella",
+    description: [
+      "Paella tradicional con un delicioso sabor a mar Mediterráneo. Nada que envidiar a una paella hecha en Valencia. Perfecta para sorprender a los invitados más guiris!",
+    ],
+    time: "50'",
+    ingredients: [
+      "tomate rallado",
+      "caldo de pescado",
+      "pimiento verde",
+      "cebolla",
+      "sepia",
+      "gambas",
+      "mejillones",
+      "almejas",
+      "arroz",
+    ],
+    steps: [
+      "Sofríe tomate rallado con pimiento verde.",
+      "Añade arroz y caldo de pescado.",
+      "Cocina añadiendo marisco y verduras al gusto.",
+      "Deja cocer a fuego medio hasta que el arroz esté en su punto.",
+    ],
+  },
+  {
+    id: 3,
+    image: "/images/recipes/brazo.png",
+    name: "Tarta Red Velvet",
+    description: [
+      "Una tarta suave y deliciosa, más rica hecha en casa que comprada en la Velvet!",
+    ],
+    time: "60'",
+    ingredients: [
+      "harina",
+      "huevo",
+      "azúcar",
+      "aceite de oliva",
+      "extracto de vainilla",
+      "leche",
+      "zumo de limón",
+      "colorante rojo",
+      "mantequilla",
+      "queso crema",
+      "cacao",
+      "leche",
+    ],
+    steps: [
+      "Mezcla harina, azúcar y huevos en un bol.",
+      "Añade aceite y cacao, mezcla bien.",
+      "Vierte la mezcla en un molde engrasado.",
+      "Hornea a 180ºC durante 30 minutos.",
+      " Deja enfriar y cubre con crema.",
+    ],
+  },
+  {
+    id: 7,
+    image: "/images/recipes/berenjena.png",
+    name: "Berenjena rellena",
+    description: [
+      "Plato ligero y nutritivo, ideal para una comida rápida, saciante y sana. Se recomienda dar mostrar esta receta a los hijos independizados que carezcan de horno.",
+    ],
+    time: "40'",
+    ingredients: [
+      "Berenjena",
+      "atún",
+      "tomate frito",
+      "cebolla",
+      "queso rallado",
+    ],
+    steps: [
+      "Parte las berenjenas por la mitad y ásalas.",
+      "Vacía la pulpa y mezcla con atún, tomate y cebolla.",
+      "Rellena las berenjenas con la mezcla.",
+      "Cubre con queso rallado y gratina en horno durante 10 minutos.",
+    ],
+  },
+  {
+    id: 4,
+    image: "/images/recipes/croquetas_bonitas.png",
+    name: "Croquetas de jamón",
+    description: [
+      "Croquetas crujientes por fuera y suaves por dentro, però sin dejar atrás la potencia del jamón 5 jotas. Seguir cautelosamente los pasos marcados por Arancita para no ensuciar de más.",
+    ],
+    time: "30'",
+    ingredients: [
+      "Jamón picado",
+      "harina",
+      "huevo",
+      "leche",
+      "pan rallado",
+      "nuez moscada",
+    ],
+    steps: [
+      "Prepara una bechamel espesa con leche y harina.",
+      "Añade jamón picado a la mezcla.",
+      "Deja enfriar la masa y forma croquetas.",
+      "Pasa las croquetas por huevo y pan rallado.",
+      " Fríe hasta dorar.",
+    ],
+  },
+  {
     id: 1,
     image: "/images/recipes/lentejas.png",
     name: "Lentejas",
@@ -32,62 +134,12 @@ const Recipes = [
     ],
   },
   {
-    id: 3,
-    image: "/images/recipes/brazo.png",
-    name: "Tarta Red Velvet",
-    description: ["Una tarta suave y deliciosa, ideal para celebraciones."],
-    time: "60'",
-    ingredients: [
-      "harina",
-      "huevo",
-      "azúcar",
-      "aceite de oliva",
-      "extracto de vainilla",
-      "leche",
-      "zumo de limón",
-      "colorante rojo",
-      "mantequilla",
-      "queso crema",
-      "cacao",
-      "leche",
-    ],
-    steps: [
-      "Mezcla harina, azúcar y huevos en un bol.",
-      "Añade aceite y cacao, mezcla bien.",
-      "Vierte la mezcla en un molde engrasado.",
-      "Hornea a 180ºC durante 30 minutos.",
-      " Deja enfriar y cubre con crema.",
-    ],
-  },
-  {
-    id: 4,
-    image: "/images/recipes/croquetas_bonitas.png",
-    name: "Croquetas de jamón",
-    description: [
-      "Croquetas crujientes por fuera y suaves por dentro, perfectas para compartir.",
-    ],
-    time: "30'",
-    ingredients: [
-      "Jamón picado",
-      "harina",
-      "huevo",
-      "leche",
-      "pan rallado",
-      "nuez moscada",
-    ],
-    steps: [
-      "Prepara una bechamel espesa con leche y harina.",
-      "Añade jamón picado a la mezcla.",
-      "Deja enfriar la masa y forma croquetas.",
-      "Pasa las croquetas por huevo y pan rallado.",
-      " Fríe hasta dorar.",
-    ],
-  },
-  {
     id: 5,
     image: "/images/recipes/canelones.png",
     name: "Canelones",
-    description: ["Canelones tradicionales, jugosos y llenos de sabor."],
+    description: [
+      "Canelones tradicionales, jugosos y llenos de sabor, ideales para pasar un San Esteban en família de la manera más catalana.",
+    ],
     time: "60'",
     ingredients: ["Carne mezclada con patê", ""],
     steps: [
@@ -101,7 +153,9 @@ const Recipes = [
     id: 6,
     image: "/images/recipes/lasana.png",
     name: "Lasaña",
-    description: ["Lasaña clásica, cremosa y llena de sabor casero."],
+    description: [
+      "Lasaña clásica, cremosa y llena de sabor casero. Esta es la versión menos “fit” pero más “ñam” de las lasañas de Arancita",
+    ],
     time: "60'",
     ingredients: [
       "Carne picada",
@@ -120,30 +174,12 @@ const Recipes = [
     ],
   },
   {
-    id: 7,
-    image: "/images/recipes/berenjena.png",
-    name: "Berenjena rellena",
-    description: ["Plato ligero y nutritivo, ideal para una comida rápida."],
-    time: "40'",
-    ingredients: [
-      "Berenjena",
-      "atún",
-      "tomate frito",
-      "cebolla",
-      "queso rallado",
-    ],
-    steps: [
-      "Parte las berenjenas por la mitad y ásalas.",
-      "Vacía la pulpa y mezcla con atún, tomate y cebolla.",
-      "Rellena las berenjenas con la mezcla.",
-      "Cubre con queso rallado y gratina en horno durante 10 minutos.",
-    ],
-  },
-  {
     id: 8,
     image: "/images/recipes/arroz_carne.png",
     name: "Arroz con carne",
-    description: ["Arroz sabroso y reconfortante, ideal para cualquier día."],
+    description: [
+      "Arroz sabroso y reconfortante, ideal para cualquier día. No recomendable para veganos.",
+    ],
     time: "45'",
     ingredients: [
       "arroz",
@@ -157,30 +193,6 @@ const Recipes = [
       "Añade arroz y caldo de carne, mezcla bien.",
       "Cocina a fuego medio durante 20 minutos.",
       "Deja reposar antes de servir.",
-    ],
-  },
-  {
-    id: 9,
-    image: "/images/recipes/paella_bonita.png",
-    name: "Paella",
-    description: ["Paella tradicional con un delicioso sabor a mar."],
-    time: "50'",
-    ingredients: [
-      "tomate rallado",
-      "caldo de pescado",
-      "pimiento verde",
-      "cebolla",
-      "sepia",
-      "gambas",
-      "mejillones",
-      "almejas",
-      "arroz",
-    ],
-    steps: [
-      "Sofríe tomate rallado con pimiento verde.",
-      "Añade arroz y caldo de pescado.",
-      "Cocina añadiendo marisco y verduras al gusto.",
-      "Deja cocer a fuego medio hasta que el arroz esté en su punto.",
     ],
   },
   {
@@ -201,7 +213,9 @@ const Recipes = [
     id: 11,
     image: "/images/recipes/sopa.png",
     name: "Sopa con pilotes",
-    description: ["Sopa reconfortante ideal para cualquier época del año."],
+    description: [
+      "Sopa reconfortante ideal para cualquier época del año. Su sabor te transportará a tu niñez.",
+    ],
     time: "35'",
     ingredients: ["caldo de carne", "fideos", "albondiguitas de cerdo"],
     steps: [
@@ -235,7 +249,9 @@ const Recipes = [
     id: 13,
     image: "/images/recipes/bacalao_tomate_ensalada.png",
     name: "Ensalada de tomato y bacalao",
-    description: ["Plato sencillo y delicioso, ideal como entrante."],
+    description: [
+      "Plato sencillo, delicioso y típico de la zona, ideal como entrante.",
+    ],
     time: "15'",
     ingredients: ["tomate", "bacalao"],
     steps: [
@@ -248,7 +264,9 @@ const Recipes = [
     id: 14,
     image: "/images/recipes/ensalada_alubias.png",
     name: "Ensalada de alubias",
-    description: ["Ensalada nutritiva y rápida, perfecta como guarnición."],
+    description: [
+      "Ensalada nutritiva y rápida, perfecta para un día de verano después de una larga mañana en la piscina.",
+    ],
     time: "10'",
     ingredients: [
       "alubias blancas",
@@ -267,7 +285,9 @@ const Recipes = [
     id: 15,
     image: "/images/recipes/ceviche.png",
     name: "Ceviche de berberechos",
-    description: ["Ceviche refrescante y original para sorprender."],
+    description: [
+      "Ceviche refrescante y original para sorprender. Se convertirà en una de tus recetas favoritas!",
+    ],
     time: "15'",
     ingredients: [
       "berberechos",
@@ -305,7 +325,9 @@ const Recipes = [
     id: 18,
     image: "/images/recipes/pizza_calabacin.png",
     name: "Pizza de calabacín",
-    description: ["Pizza alternativa y saludable para disfrutar sin culpa."],
+    description: [
+      "Pizza alternativa, keto y saludable para disfrutar sin culpa. Tu dietista te dará el visto bueno.",
+    ],
     time: "30'",
     ingredients: [
       "calabacín",
@@ -363,7 +385,9 @@ const Recipes = [
     id: 21,
     image: "/images/recipes/panellets_bonito_2.png",
     name: "Panellets",
-    description: ["Dulces tradicionales para la festividad catalana."],
+    description: [
+      "Dulces tradicionales para la Castanyada. Ideales para pasar una tarde en família!",
+    ],
     time: "30'",
     ingredients: [
       "almendras molidas",
@@ -383,7 +407,9 @@ const Recipes = [
     id: 22,
     image: "/images/recipes/tarta_60_papa.png",
     name: "Tarta de cumpleaños ",
-    description: ["Pastel especial para celebraciones."],
+    description: [
+      "Pastel especial para celebraciones. Se recomienda tener paciència para hacer la forma de los números.",
+    ],
     time: "60'",
     ingredients: [
       "pan de hojaldre",
@@ -444,7 +470,7 @@ const Recipes = [
     id: 25,
     image: "/images/recipes/sopa_adelgazar.png",
     name: "Sopa healthy",
-    description: ["Sopa ligera y nutritiva."],
+    description: ["Sopa ligera, nutritiva y buenisima."],
     time: "30'",
     ingredients: [
       "champiñones",
@@ -467,7 +493,9 @@ const Recipes = [
     id: 26,
     image: "/images/recipes/lomo_sal.png",
     name: "Lomo a la sal",
-    description: ["Receta sencilla para una carne sabrosa."],
+    description: [
+      "Receta sencilla para una carne sabrosa con un sabor diferente. Los más peques de la casa adorarán esta receta.",
+    ],
     time: "90'",
     ingredients: ["Trozaco de lomo", "muchísima sal", "especias"],
     steps: [
@@ -503,7 +531,9 @@ const Recipes = [
     id: 28,
     image: "/images/recipes/codillo.png",
     name: "Codillo con patatas",
-    description: ["Plato contundente y delicioso para días fríos."],
+    description: [
+      "Plato contundente y delicioso para días fríos. Típcio del norte y centro de Europa.",
+    ],
     time: "120'",
     ingredients: ["codillo", "patatas", "cebolla", "ajo", "laurel", "cerveza"],
     steps: [
