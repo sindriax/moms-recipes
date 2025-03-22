@@ -10,32 +10,24 @@ function Header() {
       </div>
 
       <nav className="flex-1 flex justify-center">
-        <ul className="flex space-x-8">
-          <li>
-            <Link href="/" className="text-gray-800 hover:text-blue-500">
-              Inicio
-            </Link>
-          </li>
-          <li>
-            <Link href="/recipes" className="text-gray-800 hover:text-blue-500">
-              Recetas
-            </Link>
-          </li>
-          <li>
-            <Link href="/about" className="text-gray-800 hover:text-blue-500">
-              Sobre la Chef
-            </Link>
-          </li>
-          <li>
-            <Link href="/shop" className="text-gray-800 hover:text-blue-500">
-              Tienda
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact" className="text-gray-800 hover:text-blue-500">
-              Contacto
-            </Link>
-          </li>
+        <ul className="flex space-x-8 text-gray-700 font-semibold tracking-wide text-lg">
+          {[
+            { href: "/", text: "Inicio" },
+            { href: "/recipes", text: "Recetas" },
+            { href: "/about", text: "Sobre la Chef" },
+            { href: "/shop", text: "Tienda" },
+            { href: "/contact", text: "Contacto" },
+          ].map((link) => (
+            <li key={link.href} className="relative">
+              <Link
+                href={link.href}
+                className="group transition-colors duration-300 hover:text-orange-400"
+              >
+                {link.text}
+                <span className="absolute -bottom-1 left-0 h-0.5 w-0 bg-orange-300 transition-all duration-300 group-hover:w-full" />
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
