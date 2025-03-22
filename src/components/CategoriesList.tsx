@@ -32,11 +32,11 @@ interface Category {
 
 function CategoriesList() {
   const categories: Category[] = [
-    { icon: brekkie, label: "Breakfast", color: "#F9FAFB" },
-    { icon: vegan, label: "Vegan", color: "#F0FDF4" },
-    { icon: meat, label: "Meat", color: "#FEF3C7" },
-    { icon: dessert, label: "Dessert", color: "#FFF7ED" },
-    { icon: sushi, label: "Lunch", color: "#E0F2FE" },
+    { icon: brekkie, label: "Desayunos", color: "#F9FAFB" },
+    { icon: vegan, label: "Saludables", color: "#F0FDF4" },
+    { icon: meat, label: "Carne", color: "#FEF3C7" },
+    { icon: dessert, label: "Postres", color: "#FFF7ED" },
+    { icon: sushi, label: "Comidas", color: "#E0F2FE" },
     { icon: choco, label: "Chocolate", color: "#F3E8FF" },
   ];
 
@@ -49,7 +49,7 @@ function CategoriesList() {
         </button>
       </div>
 
-      <div className="flex justify-center w-100 h-40">
+      <div className="flex justify-center w-100 h-40 mt-20">
         <motion.div
           className="flex flex-wrap space-x-4 w-100"
           variants={containerVariants}

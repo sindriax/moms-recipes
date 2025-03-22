@@ -21,21 +21,26 @@ const RecipesCard: React.FC<RecipesCardProps> = ({ recipe }) => {
 
   return (
     <Link href={`/recipes/${recipe.id}`}>
-      <div className="max-w-sm rounded overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white border border-gray-200 m-4 cursor-pointer">
-        <div className="relative w-full h-48">
+      <div
+        className="w-80 rounded-lg border border-orange-200 shadow hover:shadow 
+                   transform hover:-translate-y-2 
+                   transition-all duration-300 ease-in-out 
+                   bg-white m-4 cursor-pointer group"
+      >
+        <div className="relative w-full aspect-square">
           <Image
             src={recipe.image}
             alt={recipe.name}
             layout="fill"
             objectFit="cover"
-            className="rounded-t"
+            className="rounded-t-lg"
           />
         </div>
-        <div className="p-4">
-          <h2 className="text-xl font-semibold text-gray-800 mb-2">
+        <div className="p-2">
+          <h2 className="text-base font-semibold text-gray-800 mb-1">
             {recipe.name}
           </h2>
-          <p className="text-gray-600">
+          <p className="text-gray-600 text-sm">
             <strong>Tiempo:</strong> {recipe.time}
           </p>
         </div>

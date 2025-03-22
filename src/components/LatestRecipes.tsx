@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import RecipeCard from "./RecipeCard";
 import Recipes from "../data/recipes";
 import { useKeenSlider } from "keen-slider/react";
@@ -26,6 +26,34 @@ function LatestRecipes() {
     },
   });
 
+  const [inView, setInView] = useState(false);
+  const sliderContainerRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setInView(entry.isIntersecting);
+      },
+      { threshold: 0.5 }
+    );
+    if (sliderContainerRef.current) {
+      observer.observe(sliderContainerRef.current);
+    }
+    return () => {
+      if (sliderContainerRef.current) {
+        observer.unobserve(sliderContainerRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!instanceRef.current || !inView) return;
+    const interval = setInterval(() => {
+      instanceRef.current?.next();
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [instanceRef, inView]);
+
   return (
     <section className="p-8 ml-20 mr-20 mt-20">
       <motion.div
@@ -35,7 +63,7 @@ function LatestRecipes() {
         viewport={{ once: true }}
         className="w-full flex flex-col items-center justify-center mb-40 text-center"
       >
-        <h1 className="text-5xl font-bold text-gray-900 mb-4">
+        <h1 className="text-5xl font-bold text-orange-300 mb-4">
           Recetas simples y deliciosas
         </h1>
         <p className="text-gray-600 text-lg">
@@ -45,7 +73,12 @@ function LatestRecipes() {
         </p>
       </motion.div>
       <h2 className="text-3xl font-bold text-gray-900 mb-4">Últimas Recetas</h2>
-      <div ref={sliderRef} className="keen-slider">
+      <div
+        ref={(node) => {
+          sliderRef(node);
+        }}
+        className="keen-slider"
+      >
         {Recipes.map((recipe) => (
           <div key={recipe.id} className="keen-slider__slide">
             <RecipeCard
@@ -60,7 +93,7 @@ function LatestRecipes() {
           </div>
         ))}
       </div>
-      <div className="flex justify-center mt-4">
+      {/* <div className="flex justify-center mt-4">
         <button
           onClick={() => instanceRef.current?.prev()}
           className="mr-2 p-2 bg-gray-200 rounded hover:bg-gray-300"
@@ -73,7 +106,7 @@ function LatestRecipes() {
         >
           Next
         </button>
-      </div>
+      </div> */}
     </section>
   );
 }
