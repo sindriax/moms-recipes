@@ -43,9 +43,9 @@ function CategoriesList() {
   return (
     <section className="p-8 mt-10">
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-3xl font-bold text-gray-900 ml-20">Categories</h2>
+        <h2 className="text-3xl font-bold text-gray-900 ml-20">Categorías</h2>
         <button className="bg-blue-100 text-black font-bold px-4 py-2 rounded-full shadow mr-20">
-          View All Categories
+          Ver todas las categorías
         </button>
       </div>
 

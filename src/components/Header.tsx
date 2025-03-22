@@ -1,12 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../public/final.png";
+import LogoName from "../../public/cocina.png";
 
 function Header() {
   return (
     <header className="w-full h-[14vh] flex items-center">
-      <div className="ml-8 mt-4">
-        <Image src={Logo} alt="Cocinita" height={90} />
+      <div className="ml-20 mt-4 group flex items-center">
+        <Image
+          src={Logo}
+          alt="Cocinita"
+          height={90}
+          className="transition-transform duration-300 group-hover:scale-110"
+        />
+        <Image src={LogoName} alt="Cocinita" height={50} className="ml-2" />
       </div>
 
       <nav className="flex-1 flex justify-center">
