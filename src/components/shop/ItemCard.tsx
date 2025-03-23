@@ -1,5 +1,6 @@
-import React from "react";
-import Link from "next/link";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
 
 interface Item {
@@ -15,32 +16,41 @@ interface ItemCardProps {
 }
 
 const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
-  if (!item || !item.id) {
-    return null;
-  }
+  const [isSoldOut, setIsSoldOut] = useState(false);
+
+  const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    e.preventDefault();
+    setIsSoldOut(true);
+  };
 
   return (
-    <Link href={`/items/${item.id}`}>
-      <div className="max-w-sm rounded overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white border border-gray-200 m-4 cursor-pointer">
-        <div className="relative w-full h-48">
-          <Image
-            src={item.image}
-            alt={item.name}
-            layout="fill"
-            objectFit="cover"
-            className="rounded-t"
-          />
-        </div>
-        <div className="p-4">
-          <h2 className="text-xl font-semibold text-gray-800 mb-2">
-            {item.name}
-          </h2>
-          <p className="text-gray-600">
-            <strong>Price:</strong> {item.price}
-          </p>
-        </div>
+    <div
+      onClick={handleClick}
+      className="relative max-w-sm rounded overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white border border-gray-200 m-4 cursor-pointer"
+    >
+      <div className="relative w-full h-48">
+        <Image
+          src={item.image}
+          alt={item.name}
+          layout="fill"
+          objectFit="cover"
+          className="rounded-t"
+        />
+        {isSoldOut && (
+          <div className="absolute inset-0 bg-orange-500 bg-opacity-50 flex items-center justify-center">
+            <span className="text-white font-bold text-xl">Agotado :(</span>
+          </div>
+        )}
       </div>
-    </Link>
+      <div className="p-4">
+        <h2 className="text-xl font-semibold text-gray-800 mb-2">
+          {item.name}
+        </h2>
+        <p className="text-gray-600">
+          <strong>Precio:</strong> {item.price}€
+        </p>
+      </div>
+    </div>
   );
 };
 
