@@ -71,20 +71,6 @@ const RecipesDetails: React.FC<RecipesDetailsProps> = ({ recipe }) => {
           </li>
         ))}
       </ol>
-      <style jsx>{`
-        @keyframes underlineAnimation {
-          0% {
-            width: 0;
-          }
-          100% {
-            width: 100%;
-          }
-        }
-        .underline-animate {
-          width: 0;
-          animation: underlineAnimation 1s forwards;
-        }
-      `}</style>
     </div>
   );
 };
