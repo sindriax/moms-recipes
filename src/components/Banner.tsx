@@ -26,10 +26,12 @@ export default function Banner() {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="text-lg sm:text-xl text-gray-700 max-w-3xl px-4 py-2 rounded"
         >
-          Arantxa, también conocida como{" "}
-          <b style={{ color: "orange" }}>Arancita</b>, es el alma de cada
-          comida. Su cocina ha conquistado paladares de todo el mundo. No solo
-          cocina con maestría, cocina con corazón.
+          Bienvenidos a este rinconcito dedicado a nuestra chef favorita,
+          Arantxa, o como la llamaban de pequeña en Mataporquera,{" "}
+          <b style={{ color: "orange" }}>Arancita</b>. Un espacio creado con
+          cariño para celebrar a la persona que llena cada plato de alegría y
+          cada comida de momentos especiales. No solo cocina con maestría,
+          cocina con corazón.
         </motion.p>
       </div>
       <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-transparent to-white"></div>
