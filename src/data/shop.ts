@@ -1,10 +1,10 @@
 const Items = [
   {
     id: 1,
-    name: "El Delantal Mágico Anti-Manchas",
+    name: "Delantal Mágico Antimanchas",
     description:
       "Delantal premium resistente a salpicaduras, con bolsillos amplios y ajuste perfecto. ¡Cocina con estilo y mantén tu ropa impecable!",
-    price: 16.5,
+    price: 16.99,
     image: "/images/shop/delantal.png",
   },
   {
@@ -17,15 +17,15 @@ const Items = [
   },
   {
     id: 3,
-    name: "Set BBQ de Acero Inoxidable",
+    name: "Set de BBQ de Acero Inoxidable",
     description:
       "Batidora de pie con 5 velocidades y bowl de acero inoxidable de 5L. Perfecta para masas, merengues y todo tipo de preparaciones.",
-    price: 199.99,
+    price: 49.99,
     image: "/images/shop/setbbq.jpeg",
   },
   {
     id: 4,
-    name: "Cubre-Jamón",
+    name: "Cubrejamón Premium",
     description:
       "Cubierta oficial que protege tu jamón serrano de las miradas curiosas y el polvo.",
     price: 13.99,
@@ -33,7 +33,7 @@ const Items = [
   },
   {
     id: 5,
-    name: "Tupper para llevar al trabajo",
+    name: "Tupper Hermético para el ICS",
     description:
       "Tupper con tapa hermética, ideal para transportar comidas sin derrames ni mezclas de olores.",
     price: 9.99,
@@ -41,11 +41,11 @@ const Items = [
   },
   {
     id: 6,
-    name: "Tote Bag Ecológica Multiusos",
+    name: "Thermomix TM6 Oficial de LCDA©",
     description:
-      "Bolsa tote de algodón 100% ecológico, resistente y espaciosa. Ideal para compras, paseos o llevar tus objetos personales con estilo.",
-    price: 14.99,
-    image: "/images/shop/tote.png",
+      "La Thermomix TM6 es el robot de cocina más avanzado, diseñado para simplificar tus recetas favoritas. Con múltiples funciones como cocción lenta, al vacío, fermentación y más, es el aliado perfecto para cualquier amante de la cocina. ¡Descubre nuevas posibilidades con La Cocinita de Arancita!",
+    price: 1339.99,
+    image: "/thermomix.png",
   },
 ];
 

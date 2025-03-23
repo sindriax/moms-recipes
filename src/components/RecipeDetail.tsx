@@ -26,7 +26,7 @@ const RecipesDetails: React.FC<RecipesDetailsProps> = ({ recipe }) => {
         </h1>
         <Link href="/recipes">
           <div className="bg-white text-gray-800 px-4 py-2 rounded hover:bg-orange-300 transition duration-200">
-            ← Volver a Recetas
+            ← Volver Atrás
           </div>
         </Link>
       </div>
