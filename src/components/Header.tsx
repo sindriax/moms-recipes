@@ -53,7 +53,7 @@ function Header() {
       </nav>
 
       {isOpen && (
-        <div className="absolute top-[14vh] left-0 w-full bg-white z-10 shadow-md md:hidden">
+        <div className="absolute top-[14vh] left-0 w-full bg-white z-50 shadow-md md:hidden">
           <ul className="flex flex-col items-center py-4 space-y-4 text-gray-700 font-semibold text-lg">
             {[
               { href: "/", text: "Inicio" },

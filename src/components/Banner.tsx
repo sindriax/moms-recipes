@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 export default function Banner() {
   return (
-    <section className="relative bg-[url('/banner1.png')] bg-cover bg-[position:top] min-h-[300px] sm:min-h-[400px] md:min-h-[700px] flex items-center justify-center px-4">
-      <div className="relative z-10 flex flex-col items-center justify-center text-center">
+    <section className="relative mt-10 md:mt-0 bg-[url('/banner1.png')] bg-cover bg-[position:top] min-h-[200px] sm:min-h-[400px] md:min-h-[700px] flex items-center justify-center px-4">
+      <div className="relative z-20 flex flex-col items-center justify-center text-center">
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -19,7 +19,6 @@ export default function Banner() {
             className="mb-4"
           />
         </motion.div>
-
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
