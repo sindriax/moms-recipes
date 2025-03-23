@@ -39,42 +39,60 @@ const AboutMe = () => {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row items-center justify-between gap-6 bg-white p-8 w-[80%] mt-10 rounded-lg shadow-md">
-        <div className="flex-shrink-0 w-48 md:w-64">
-          <Image
-            src="/mami4.jpeg"
-            alt="Left side image"
-            width={384}
-            height={512}
-            className="rounded-lg"
-          />
+      <div className="flex flex-col items-center justify-between gap-6 bg-white p-8 w-[80%] mt-10 rounded-lg shadow-md mx-auto">
+        <div>
+          <h2 className="relative inline-block text-2xl sm:text-3xl font-bold text-gray-800 break-words mb-2">
+            Sobre la Chef 👩🏼‍🍳
+            <span className="absolute left-0 -bottom-1 h-1 bg-orange-200 inline-block underline-animate"></span>
+          </h2>
         </div>
-        <div className="flex-grow text-center md:text-left px-4 md:px-8">
-          <h2 className="text-2xl font-bold mb-4">Sobre la Chef</h2>
-          <p className="text-gray-700 leading-relaxed w-[100%]">
-            Arantxa /aˈɾanθaθ/ también conocida como{" "}
-            <b style={{ color: "orange" }}>Arancita</b> es una mujer maravillosa
-            y muy trabajadora, nacida en el encantador pueblo de Mataporquera.
-            Aunque a veces ella misma no se lo crea, es una cocinera
-            excepcional, capaz de preparar platos que dejan a todos
-            maravillados. Su talento en la cocina es innegable, y quienes tienen
-            la suerte de probar sus recetas siempre quedan con ganas de más.
-            Nacida el 19 de marzo de 1963,{" "}
-            <b style={{ color: "orange" }}>Arancita</b> ha pasado su vida
-            demostrando que el esfuerzo y la pasión por lo que se hace son los
-            ingredientes secretos para destacar en todo lo que emprende. No hay
-            quien no la conozca ni admire su capacidad de hacer sentir a todos
-            bienvenidos y valorados. ¡Te queremos mami! 🧡
-          </p>
-        </div>
-        <div className="flex-shrink-0 w-48 md:w-64">
-          <Image
-            src="/mami1.jpeg"
-            alt="Right side image"
-            width={384}
-            height={512}
-            className="rounded-lg"
-          />
+        <div className="flex items-center gap-4">
+          <div className="flex-shrink-0 w-48 md:w-64">
+            <Image
+              src="/mami4.jpeg"
+              alt="Left side image"
+              width={384}
+              height={512}
+              className="rounded-lg h-auto max-h-[340px] object-cover"
+            />
+          </div>
+          <div className="flex-grow text-center md:text-left px-4 md:px-8">
+            <p className="text-gray-700 leading-relaxed w-[100%]">
+              Arantxa /aˈɾanθaθ/, también conocida como{" "}
+              <b style={{ color: "orange" }}>Arancita</b> ha dedicado su vida a
+              demostrar que el esfuerzo, la constancia y la pasión son los
+              ingredientes secretos para destacar en todo lo que hace.<br></br>{" "}
+              <br></br>
+              Aunque a veces ella misma no se lo crea, es una cocinera
+              excepcional, capaz de preparar platos que dejan sin palabras a
+              quien los prueba. Y lo decimos con pruebas: su cocina ha sido
+              aplaudida por personas de todo el mundo —desde amigos “guiris” de
+              sus hijas, provenientes de América, Grecia, Francia o Vietnam,
+              hasta compañeros de piso, colegas de oficina en Barcelona o
+              cualquier afortunado que haya pasado por su mesa. Siempre se
+              quedan con ganas de más.<br></br>
+              <br></br> Pero si hay algo que{" "}
+              <b style={{ color: "orange" }}>Arancita</b> hace aún mejor que
+              cocinar, es ser madre. Su dedicación, su entrega y sus sacrificios
+              —aunque a veces parezca que sus hijas no lo notan— no pasan
+              desapercibidos. ¡Sí que lo notan, mami! Y te lo agradecen con todo
+              su corazón. Gracias por ser hogar, por dar tanto sin pedir nada a
+              cambio, por llenar nuestras vidas de sabor, amor y calidez.
+              <br></br>
+              <span style={{ float: "right" }}>
+                ¡Te queremos muchísimo, mami! 🧡
+              </span>
+            </p>
+          </div>
+          <div className="flex-shrink-0 w-48 md:w-64">
+            <Image
+              src="/mami1.jpeg"
+              alt="Right side image"
+              width={384}
+              height={512}
+              className="rounded-lg h-auto max-h-[340px] object-cover"
+            />
+          </div>
         </div>
       </div>
       <div className="w-full max-w-6xl px-4 sm:px-6 mx-auto my-10 sm:my-20">

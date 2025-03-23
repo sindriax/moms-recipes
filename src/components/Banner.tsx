@@ -22,11 +22,11 @@ export default function Banner() {
           <span className="absolute left-0 -bottom-1 h-1 bg-orange-200 inline-block underline-animate"></span>
         </h2>
         <p className="ml-0 text-lg text-gray-600 text-center md:text-left">
-          Arantxa es una famosa chef de Mataporquera, ahora reconocida como chef
-          con estrella Michelin en Cataluña. Su talento en la cocina abarca
-          desde deliciosos canelones hasta asados perfectos. Sabe preparar de
-          todo, siempre con una dedicación y pasión que elevan cada plato a una
-          experiencia inolvidable.
+          Arantxa, también conocida como{" "}
+          <b style={{ color: "orange" }}>Arancita</b>, es el alma de cada
+          comida. Desde su querida Mataporquera, su cocina ha conquistado
+          paladares de todo el mundo. No solo cocina con maestría, cocina con
+          corazón.
         </p>
       </div>
 
