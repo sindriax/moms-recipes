@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# La Cocinita de Arancita
 
-## Getting Started
+**A Heartfelt Tribute to My Mom, the Ultimate Chef**
 
-First, run the development server:
+La Cocinita de Arancita is a web application crafted as a special gift for my mom, Arantxa, lovingly known as *Arancita*. This project celebrates her passion for cooking and the joy she brings into our lives through her incredible recipes.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Overview
+
+This project showcases:
+- **Delicious Recipes:** A collection of simple, yet mouthwatering recipes.
+- **A Virtual (Fake) Shop:** A selection of logo-inspired items—just for fun!
+- **Interactive UI:** Animated transitions, responsive design, and a vibrant interface that reflects the warmth of a family kitchen.
+
+Every detail is designed to honor the creativity, dedication, and heart that my mom puts into every dish.
+
+## Features
+
+- **Desktop-First Design:** Optimized for a seamless desktop experience, with responsive adjustments for smaller screens.
+- **Animated Banner:** Dynamic hero section with smooth transitions and gradient overlays that introduce the essence of Arantxa's cooking.
+- **Recipe Showcase:** Easy-to-navigate collection of recipes that bring home the joy of cooking.
+- **Virtual Shop:** An interactive shop section where you can explore fun, logo-inspired gifts.
+- **Personal Touch:** A narrative throughout the site that celebrates the unique story of Arantxa, my favorite chef.
+
+
+## Installation
+
+1. **Clone the Repository:**
+
+````
+git clone https://github.com/sindriax/moms-recipes.git
+`````
+2.	**Install Dependencies:**
+
+```
+cd moms-recipes
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3.	**Run the Development Server:**
+```
+npm run dev
+```
+Open your browser at http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Next.js:** For building a fast, scalable web application.
+- **Tailwind CSS:** For rapid, responsive styling.
+- **Framer Motion:** For smooth, declarative animations.
+- **Keen Slider:** For responsive carousels and interactive image slideshows.
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+Check out the live version of the site: [La Cocinita de Arancita](https://cocinita-arancita.vercel.app/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Credits
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is a loving tribute to my mom, Arantxa (affectionately known as *Arancita*), whose passion for cooking inspires every recipe and every line of code. Thank you, mom, for filling our lives with love, flavor, and warmth.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
