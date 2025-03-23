@@ -12,9 +12,10 @@ interface Recipe {
 
 interface RecipesCardProps {
   recipe: Recipe;
+  className?: string;
 }
 
-const RecipesCard: React.FC<RecipesCardProps> = ({ recipe }) => {
+const RecipesCard: React.FC<RecipesCardProps> = ({ recipe, className }) => {
   if (!recipe || !recipe.id) {
     return null;
   }
@@ -22,10 +23,10 @@ const RecipesCard: React.FC<RecipesCardProps> = ({ recipe }) => {
   return (
     <Link href={`/recipes/${recipe.id}`}>
       <div
-        className="w-80 box-border rounded-lg border border-orange-200 shadow hover:shadow 
+        className={`box-border rounded-lg shadow hover:shadow 
                    transform hover:-translate-y-2 
                    transition-all duration-300 ease-in-out 
-                   bg-white m-4 cursor-pointer group"
+                   bg-white m-4 cursor-pointer group ${className || "w-80"}`}
       >
         <div className="relative w-full aspect-square">
           <Image
