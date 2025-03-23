@@ -77,16 +77,16 @@ const AboutMe = () => {
           />
         </div>
       </div>
-      <div className="w-[80%] mx-auto my-20">
+      <div className="w-full max-w-6xl px-4 sm:px-6 mx-auto my-10 sm:my-20">
         <div ref={sliderRef} className="keen-slider">
           {carouselImages.map((img, index) => (
-            <div key={index} className="keen-slider__slide">
+            <div key={index} className="keen-slider__slide flex justify-center">
               <Image
                 src={img}
                 alt={`Carousel image ${index + 1}`}
                 width={200}
                 height={200}
-                className="rounded-lg object-cover w-[200px] h-[200px]"
+                className="rounded-lg object-cover w-full max-w-[200px] aspect-square"
               />
             </div>
           ))}
