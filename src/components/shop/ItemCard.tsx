@@ -42,6 +42,7 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
           </div>
         )}
       </div>
+
       <div className="p-4">
         <h2 className="text-xl font-semibold text-gray-800 mb-2">
           {item.name}

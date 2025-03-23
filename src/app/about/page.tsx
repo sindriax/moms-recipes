@@ -80,7 +80,8 @@ const AboutMe = () => {
               cambio, por llenar nuestras vidas de sabor, amor y calidez.
               <br></br>
               <span className="block text-right mt-4 font-semibold">
-                ¡Te queremos muchi, mamuchi! 🧡
+                ¡Te queremos muchi,
+                <b style={{ color: "orange" }}> mamuchi</b>! 🧡
               </span>
             </p>
           </div>

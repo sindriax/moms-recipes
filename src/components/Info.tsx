@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import ChefImage from "/public/arancita.png";
+import Link from "next/link";
 
 const Info = () => {
   return (
@@ -19,11 +20,14 @@ const Info = () => {
             La magia de cocinar con corazón
           </h3>
           <p className="text-gray-600 text-base sm:text-lg px-2 sm:px-0">
-            En La Cocinita de Arancita descubrirás recetas auténticas, sencillas
-            y llenas de amor. Cada plato tiene su propia historia y sabor único,
-            pensado para que disfrutes cocinando y sorprendas a todos los que
-            quieres. Porque cocinar es compartir, y nadie lo sabe mejor que
-            Arantxa.
+            En La Cocinita de{" "}
+            <Link href="/about">
+              <b style={{ color: "orange" }}>Arancita</b>
+            </Link>{" "}
+            descubrirás recetas auténticas, sencillas y llenas de amor. Cada
+            plato tiene su propia historia y sabor único, pensado para que
+            disfrutes cocinando y sorprendas a todos los que quieres. Porque
+            cocinar es compartir, y nadie lo sabe mejor que Arantxa.
           </p>
         </motion.div>
 
