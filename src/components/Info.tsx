@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import ChefImage from "/public/chefita.png";
+import ChefImage from "/public/arancita.png";
 
 const Info = () => {
   return (
