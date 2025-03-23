@@ -22,7 +22,7 @@ const RecipesCard: React.FC<RecipesCardProps> = ({ recipe }) => {
   return (
     <Link href={`/recipes/${recipe.id}`}>
       <div
-        className="w-80 rounded-lg border border-orange-200 shadow hover:shadow 
+        className="w-80 box-border rounded-lg border border-orange-200 shadow hover:shadow 
                    transform hover:-translate-y-2 
                    transition-all duration-300 ease-in-out 
                    bg-white m-4 cursor-pointer group"

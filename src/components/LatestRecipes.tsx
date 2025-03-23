@@ -6,6 +6,7 @@ import Recipes from "../data/recipes";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { motion } from "framer-motion";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 function LatestRecipes() {
   const [sliderRef, instanceRef] = useKeenSlider({
@@ -55,58 +56,62 @@ function LatestRecipes() {
   }, [instanceRef, inView]);
 
   return (
-    <section className="p-8 ml-20 mr-20 mt-20">
+    <section className="px-4 sm:px-8 md:px-20 mt-10 sm:mt-20">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.8 }}
         viewport={{ once: true }}
-        className="w-full flex flex-col items-center justify-center mb-40 text-center"
+        className="w-full flex flex-col items-center justify-center mb-20 sm:mb-40 text-center"
       >
-        <h1 className="text-5xl font-bold text-orange-300 mb-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-orange-300 mb-4">
           Recetas simples y deliciosas
         </h1>
-        <p className="text-gray-600 text-lg">
+        <p className="text-gray-600 text-base sm:text-lg px-2 sm:px-0">
           Disfruta de recetas sencillas, llenas de sabor y perfectas para
           cualquier ocasión. Explora combinaciones únicas y sorprende a todos
           con platillos inolvidables.
         </p>
       </motion.div>
-      <h2 className="text-3xl font-bold text-gray-900 mb-4">Últimas Recetas</h2>
-      <div
-        ref={(node) => {
-          sliderRef(node);
-        }}
-        className="keen-slider"
-      >
-        {Recipes.map((recipe) => (
-          <div key={recipe.id} className="keen-slider__slide">
-            <RecipeCard
-              recipe={{
-                id: recipe.id,
-                image: recipe.image,
-                name: recipe.name,
-                time: recipe.time,
-                onClick: () => {},
-              }}
-            />
-          </div>
-        ))}
-      </div>
-      {/* <div className="flex justify-center mt-4">
+      <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 text-center sm:text-left">
+        Últimas Recetas
+      </h2>
+      <div className="relative max-w-screen-xl mx-auto px-2 sm:px-4">
         <button
           onClick={() => instanceRef.current?.prev()}
-          className="mr-2 p-2 bg-gray-200 rounded hover:bg-gray-300"
+          className="hidden sm:flex absolute top-1/2 -left-2 sm:-left-4 transform -translate-y-1/2 bg-white p-2 sm:p-3 rounded-full shadow hover:bg-gray-100 z-10 border border-orange-300"
+          aria-label="Previous"
         >
-          Prev
+          <ChevronLeft size={24} />
         </button>
         <button
           onClick={() => instanceRef.current?.next()}
-          className="p-2 bg-gray-200 rounded hover:bg-gray-300"
+          className="hidden sm:flex absolute top-1/2 -right-2 sm:-right-4 transform -translate-y-1/2 bg-white p-2 sm:p-3 rounded-full shadow hover:bg-gray-100 z-10 border border-orange-300"
+          aria-label="Next"
         >
-          Next
+          <ChevronRight size={24} />
         </button>
-      </div> */}
+        <div
+          ref={(node) => {
+            sliderRef(node);
+          }}
+          className="keen-slider px-8 sm:px-12"
+        >
+          {Recipes.map((recipe) => (
+            <div key={recipe.id} className="keen-slider__slide">
+              <RecipeCard
+                recipe={{
+                  id: recipe.id,
+                  image: recipe.image,
+                  name: recipe.name,
+                  time: recipe.time,
+                  onClick: () => {},
+                }}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 }
