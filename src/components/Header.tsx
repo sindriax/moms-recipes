@@ -12,7 +12,7 @@ function Header() {
 
   return (
     <header className="relative w-full h-[14vh] flex items-center">
-      <div className="ml-20 mt-4 group flex items-center">
+      <Link href="/" className="ml-20 mt-4 group flex items-center">
         <Image
           src={Logo}
           alt="Cocinita"
@@ -20,7 +20,7 @@ function Header() {
           className="transition-transform duration-300 group-hover:scale-110"
         />
         <Image src={LogoName} alt="Cocinita" height={50} className="ml-2" />
-      </div>
+      </Link>
 
       <nav className="flex-1 flex justify-center md:justify-end pr-6">
         <ul className="hidden md:flex space-x-8 text-gray-700 font-semibold tracking-wide text-lg">
@@ -29,7 +29,7 @@ function Header() {
             { href: "/recipes", text: "Recetas" },
             { href: "/about", text: "Sobre la Chef" },
             { href: "/shop", text: "Tienda" },
-            { href: "/contact", text: "Contacto" },
+            // { href: "/contact", text: "Contacto" },
           ].map((link) => (
             <li key={link.href} className="relative">
               <Link
