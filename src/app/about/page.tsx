@@ -46,7 +46,7 @@ const AboutMe = () => {
             <span className="absolute left-0 -bottom-1 h-1 bg-orange-200 inline-block underline-animate"></span>
           </h2>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex flex-col md:flex-row items-center gap-4">
           <div className="flex-shrink-0 w-48 md:w-64">
             <Image
               src="/mami4.jpeg"
@@ -67,10 +67,10 @@ const AboutMe = () => {
               excepcional, capaz de preparar platos que dejan sin palabras a
               quien los prueba. Y lo decimos con pruebas: su cocina ha sido
               aplaudida por personas de todo el mundo —desde amigos “guiris” de
-              sus hijas, provenientes de América, Grecia, Francia o Vietnam,
-              hasta compañeros de piso, colegas de oficina en Barcelona o
-              cualquier afortunado que haya pasado por su mesa. Siempre se
-              quedan con ganas de más.<br></br>
+              sus hijas, provenientes de América, Alemania, Grecia, Francia o
+              incluso Vietnam, hasta compañeros de piso, compañeros de oficina,
+              vecinos, o cualquier afortunado que haya pasado por su mesa.
+              Siempre se quedan con ganas de más.<br></br>
               <br></br> Pero si hay algo que{" "}
               <b style={{ color: "orange" }}>Arancita</b> hace aún mejor que
               cocinar, es ser madre. Su dedicación, su entrega y sus sacrificios
@@ -79,8 +79,8 @@ const AboutMe = () => {
               su corazón. Gracias por ser hogar, por dar tanto sin pedir nada a
               cambio, por llenar nuestras vidas de sabor, amor y calidez.
               <br></br>
-              <span style={{ float: "right" }}>
-                ¡Te queremos muchísimo, mami! 🧡
+              <span className="block text-right mt-4 font-semibold">
+                ¡Te queremos muchi, mamuchi! 🧡
               </span>
             </p>
           </div>
