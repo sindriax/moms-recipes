@@ -23,7 +23,7 @@ const RecipesPage: React.FC = () => {
       ) : (
         <div className="flex flex-col items-center justify-center">
           <h1 className="relative inline-block text-2xl sm:text-4xl font-bold text-gray-800 break-words">
-            Recetas{" "}
+            Recetas 🥘
             <span className="absolute left-0 -bottom-1 h-1 bg-orange-200 inline-block underline-animate"></span>
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">

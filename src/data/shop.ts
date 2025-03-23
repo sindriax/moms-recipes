@@ -25,7 +25,7 @@ const Items = [
   },
   {
     id: 4,
-    name: "Cubrejamón Premium",
+    name: "Cubrejamón Premium Andaluz",
     description:
       "Cubierta oficial que protege tu jamón serrano de las miradas curiosas y el polvo.",
     price: 13.99,

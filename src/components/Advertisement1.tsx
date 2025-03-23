@@ -38,11 +38,14 @@ export default function ThermomixAd() {
             El secreto bien guardado de La Cocinita de Arancita
           </p>
           <p className="text-base text-gray-600 mb-6">
-            En La Cocinita de Arancita, cada receta es una obra de arte. Con
-            Thermomix a su lado, da rienda suelta a la creatividad y logra
-            resultados sorprendentes. Descubre cómo este patrocinador oficial
-            añade ese toque mágico que transforma lo cotidiano en
-            extraordinario.
+            En La Cocinita de{" "}
+            <Link href="/about">
+              <b style={{ color: "orange" }}>Arancita</b>
+            </Link>
+            , cada receta es una obra de arte. Con Thermomix a su lado, da
+            rienda suelta a la creatividad y logra resultados sorprendentes.
+            Descubre cómo este patrocinador oficial añade ese toque mágico que
+            transforma lo cotidiano en extraordinario.
           </p>
           <Link href="/shop">
             <button className="bg-orange-300 hover:bg-[#f97316] text-white font-bold py-2 px-6 rounded-full shadow-md">

@@ -1,10 +1,11 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Banner() {
   return (
-    <section className="relative mt-10 md:mt-0 bg-[url('/banner1.png')] bg-cover bg-[position:top] min-h-[200px] sm:min-h-[400px] md:min-h-[700px] flex items-center justify-center px-4">
+    <section className="relative mt-10 md:mt-8 bg-[url('/banner1.png')] bg-cover bg-[position:top] min-h-[200px] sm:min-h-[400px] md:min-h-[700px] flex items-center justify-center px-4">
       <div className="relative z-20 flex flex-col items-center justify-center text-center">
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
@@ -27,10 +28,12 @@ export default function Banner() {
         >
           Bienvenidos a este rinconcito dedicado a nuestra chef favorita,
           Arantxa, o como la llamaban de pequeña en Mataporquera,{" "}
-          <b style={{ color: "orange" }}>Arancita</b>. Un espacio creado con
-          cariño para celebrar a la persona que llena cada plato de alegría y
-          cada comida de momentos especiales. No solo cocina con maestría,
-          cocina con corazón.
+          <Link href="/about">
+            <b style={{ color: "orange" }}>Arancita</b>
+          </Link>
+          . Un espacio creado con cariño para celebrar a la persona que llena
+          cada plato de alegría y cada comida de momentos especiales. No solo
+          cocina con maestría, cocina con corazón.
         </motion.p>
       </div>
       <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-transparent to-white"></div>
