@@ -60,7 +60,7 @@ function Header() {
               { href: "/recipes", text: "Recetas" },
               { href: "/about", text: "Sobre la Chef" },
               { href: "/shop", text: "Tienda" },
-              { href: "/contact", text: "Contacto" },
+              // { href: "/contact", text: "Contacto" },
             ].map((link) => (
               <li key={link.href}>
                 <Link

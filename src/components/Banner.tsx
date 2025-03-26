@@ -36,14 +36,19 @@ export default function Banner() {
           cocina con maestría, cocina con corazón.
         </motion.p>
       </div>
-      <div className="md:hidden mt-4">
+      <motion.div
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="md:hidden mt-4"
+      >
         <Image
           src="/mobile-divider.png"
           alt="Divider"
           width={600}
           height={50}
         />
-      </div>
+      </motion.div>
       <div className="hidden md:block absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-transparent to-white"></div>
     </section>
   );
