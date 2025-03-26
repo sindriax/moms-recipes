@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Info = () => {
   return (
-    <section className="max-w-screen-xl mx-auto px-4 sm:px-8 md:px-20 mt-30 pt-40">
+    <section className="max-w-screen-xl mx-auto px-4 sm:px-8 md:px-20 mt-10 pt-10 md:mt-30 md:pt-40">
       <div className="flex flex-col md:flex-row items-center gap-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

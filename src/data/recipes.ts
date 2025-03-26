@@ -58,7 +58,7 @@ const Recipes = [
     image: "/images/recipes/berenjena.png",
     name: "Berenjena rellena",
     description: [
-      "Plato ligero y nutritivo, ideal para una comida rápida, saciante y sana. Se recomienda dar mostrar esta receta a los hijos independizados que carezcan de horno.",
+      "Plato ligero y nutritivo, ideal para una comida rápida, saciante y sana. Se recomienda dar esta receta a los hijos independizados que carezcan de horno.",
     ],
     time: "40'",
     ingredients: [
@@ -80,7 +80,7 @@ const Recipes = [
     image: "/images/recipes/croquetas_bonitas.png",
     name: "Croquetas de jamón",
     description: [
-      "Croquetas crujientes por fuera y suaves por dentro, però sin dejar atrás la potencia del jamón 5 jotas. Seguir cautelosamente los pasos marcados por Arancita para no ensuciar de más.",
+      "Croquetas crujientes por fuera y suaves por dentro, pero sin dejar atrás la potencia del jamón 5 jotas. Seguir cautelosamente los pasos marcados por Arancita para no ensuciar de más.",
     ],
     time: "30'",
     ingredients: [
@@ -104,7 +104,7 @@ const Recipes = [
     image: "/images/recipes/lentejas.png",
     name: "Lentejas",
     description: [
-      "Deliciosas lentejas para los días más fríos, mucho más ricas con Morcilla de Cantabria!",
+      "Deliciosas lentejas para los días más fríos, mucho más ricas con Morcilla de Cantabria! Y si no las quieres, las dejas... ¡es broma! Imposible dejar de comer las lentejas de Arancita.",
     ],
     time: "40'",
     ingredients: ["Chorizo", "morcilla", "zanahoria", "lentejas"],
@@ -248,7 +248,7 @@ const Recipes = [
     image: "/images/recipes/bacalao_tomate_ensalada.png",
     name: "Ensalada de tomato y bacalao",
     description: [
-      "Plato sencillo, delicioso y típico de la zona, ideal como entrante.",
+      "Plato sencillo, delicioso y típico de la zona, ideal como entrante. Preferiblemente servir cuando la hermana mayor no está.",
     ],
     time: "15'",
     ingredients: ["tomate", "bacalao"],
@@ -384,7 +384,7 @@ const Recipes = [
     image: "/images/recipes/panellets_bonito_2.png",
     name: "Panellets",
     description: [
-      "Dulces tradicionales para la Castanyada. Ideales para pasar una tarde en família!",
+      "Dulces tradicionales para la Castanyada. Ideales para pasar una tarde viendo capítulos repetidos de Joc de Cartes en familia.",
     ],
     time: "30'",
     ingredients: [
@@ -406,7 +406,7 @@ const Recipes = [
     image: "/images/recipes/tarta_60_papa.png",
     name: "Tarta de cumpleaños ",
     description: [
-      "Pastel especial para celebraciones. Se recomienda tener paciència para hacer la forma de los números.",
+      "Pastel especial para celebraciones. Se recomienda tener paciencia para hacer la forma de los números.",
     ],
     time: "60'",
     ingredients: [
@@ -427,7 +427,9 @@ const Recipes = [
     id: 23,
     image: "/images/recipes/mona_chocolate.png",
     name: "Mona chocolate",
-    description: ["Mona tradicional para Pascua."],
+    description: [
+      "Mona tradicional para Pascua. Ideal para regalar a los más peques... o mayores.",
+    ],
     time: "20'",
     ingredients: [
       "harina",
@@ -448,7 +450,9 @@ const Recipes = [
     id: 24,
     image: "/images/recipes/bizcocho.png",
     name: "Bizcocho",
-    description: ["Bizcocho casero perfecto para desayunos."],
+    description: [
+      "Bizcocho casero perfecto para desayunos, meriendas, postres, para llevar a la oficina, a los pisos de Barcelona, a la playa, a la montaña, a la luna...",
+    ],
     time: "40'",
     ingredients: [
       "harina",
@@ -468,7 +472,9 @@ const Recipes = [
     id: 25,
     image: "/images/recipes/sopa_adelgazar.png",
     name: "Sopa healthy",
-    description: ["Sopa ligera, nutritiva y buenisima."],
+    description: [
+      "Sopa ligera, nutritiva y perfecta para preparar el cuerpo para la piscina en verano.",
+    ],
     time: "30'",
     ingredients: [
       "champiñones",
@@ -477,7 +483,6 @@ const Recipes = [
       "zanahoria",
       "espinacas",
       "huevo",
-      "",
     ],
     steps: [
       "Calienta caldo de pollo y añade pollo cortado en tiras.",
@@ -492,7 +497,7 @@ const Recipes = [
     image: "/images/recipes/lomo_sal.png",
     name: "Lomo a la sal",
     description: [
-      "Receta sencilla para una carne sabrosa con un sabor diferente. Los más peques de la casa adorarán esta receta.",
+      "Receta sencilla para una carne sabrosa con un sabor diferente. Recomendable preparar en cantidades grandes para que los hijos se lleven tuppers.",
     ],
     time: "90'",
     ingredients: ["Trozaco de lomo", "muchísima sal", "especias"],
@@ -506,7 +511,9 @@ const Recipes = [
     id: 27,
     image: "/images/recipes/pisto.png",
     name: "Pisto",
-    description: ["Clásico acompañante o plato principal español."],
+    description: [
+      "Clásico acompañante o plato principal español. Ideal para aprovechar verduras de temporada de Fatih.",
+    ],
     time: "30'",
     ingredients: [
       "calabacín",
@@ -530,7 +537,7 @@ const Recipes = [
     image: "/images/recipes/codillo.png",
     name: "Codillo con patatas",
     description: [
-      "Plato contundente y delicioso para días fríos. Típcio del norte y centro de Europa.",
+      "Plato contundente y delicioso para días fríos. ideal para valientes con un gran apetito. ¡Cuidado, puede provocar adicción culinaria!",
     ],
     time: "120'",
     ingredients: ["codillo", "patatas", "cebolla", "ajo", "laurel", "cerveza"],
@@ -576,7 +583,9 @@ const Recipes = [
     id: 30,
     image: "/images/recipes/hojaldre_nata.png",
     name: "Pastelitos de hodaldre con nata",
-    description: ["El postre perfecto para los amantes de la nata."],
+    description: [
+      "El postre perfecto para los amantes de la nata (como Anselmito).",
+    ],
     time: "35'",
     ingredients: [
       "masa de hojaldre",
