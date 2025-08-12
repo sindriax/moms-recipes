@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Auth0Provider } from "@auth0/nextjs-auth0";
 
 export const metadata: Metadata = {
   title: "La Cocinita de Arancita",
@@ -16,9 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col w-full">
-        <Header />
-        {children}
-        <Footer />
+        <Auth0Provider>
+          <Header />
+          {children}
+          <Footer />
+        </Auth0Provider>
       </body>
     </html>
   );
