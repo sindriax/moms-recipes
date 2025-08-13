@@ -37,12 +37,13 @@ function LatestRecipes() {
       },
       { threshold: 0.5 }
     );
-    if (sliderContainerRef.current) {
-      observer.observe(sliderContainerRef.current);
+    const currentRef = sliderContainerRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
     return () => {
-      if (sliderContainerRef.current) {
-        observer.unobserve(sliderContainerRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
