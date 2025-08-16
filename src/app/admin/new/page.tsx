@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import AuthGuard from "../../../components/admin/AuthGuard";
 
 type RecipeForm = {
   name: string;
@@ -19,7 +20,7 @@ function splitLines(s: string) {
     .filter(Boolean);
 }
 
-export default function NewRecipePage() {
+function NewRecipeContent() {
   const [form, setForm] = useState<RecipeForm>({
     name: "",
     image_url: "",
@@ -233,5 +234,13 @@ export default function NewRecipePage() {
         )}
       </form>
     </div>
+  );
+}
+
+export default function NewRecipePage() {
+  return (
+    <AuthGuard>
+      <NewRecipeContent />
+    </AuthGuard>
   );
 }
