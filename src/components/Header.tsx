@@ -5,7 +5,7 @@ import Link from "next/link";
 import Logo from "../../public/final.png";
 import LogoName from "../../public/cocina.png";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, User } from "lucide-react";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +23,7 @@ function Header() {
       </Link>
 
       <nav className="flex-1 flex justify-center md:justify-end pr-6">
-        <ul className="hidden md:flex space-x-8 text-gray-700 font-semibold tracking-wide text-lg">
+        <ul className="hidden md:flex space-x-8 text-gray-700 font-semibold tracking-wide text-lg items-center">
           {[
             { href: "/", text: "Inicio" },
             { href: "/recipes", text: "Recetas" },
@@ -41,6 +41,15 @@ function Header() {
               </Link>
             </li>
           ))}
+          <li className="relative">
+            <Link
+              href="/admin/login"
+              className="group flex items-center justify-center w-10 h-10 text-gray-700 hover:text-orange-400 hover:bg-orange-50 rounded-full transition-all duration-300"
+              aria-label="Iniciar sesión"
+            >
+              <User size={20} />
+            </Link>
+          </li>
         </ul>
 
         <button
@@ -72,6 +81,16 @@ function Header() {
                 </Link>
               </li>
             ))}
+            <li className="border-t border-gray-200 pt-4">
+              <Link
+                href="/admin/login"
+                onClick={() => setIsOpen(false)}
+                className="flex items-center space-x-2 hover:text-orange-400 transition-colors duration-300"
+              >
+                <User size={20} />
+                <span>Iniciar Sesión</span>
+              </Link>
+            </li>
           </ul>
         </div>
       )}
