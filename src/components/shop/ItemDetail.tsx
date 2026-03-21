@@ -29,9 +29,8 @@ const ItemsDetails: React.FC<ItemsDetailsProps> = ({ item }) => {
         <Image
           src={item.image}
           alt={item.name}
-          layout="fill"
-          objectFit="cover"
-          className="rounded-lg"
+          fill
+          className="rounded-lg object-cover"
         />
       </div>
       <p className="text-lg text-gray-700 mb-4">{item.description}</p>

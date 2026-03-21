@@ -32,9 +32,8 @@ const RecipesCard: React.FC<RecipesCardProps> = ({ recipe, className }) => {
           <Image
             src={recipe.image}
             alt={recipe.name}
-            layout="fill"
-            objectFit="cover"
-            className="rounded-t-lg"
+            fill
+            className="rounded-t-lg object-cover"
           />
         </div>
         <div className="p-2">

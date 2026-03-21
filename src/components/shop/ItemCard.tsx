@@ -32,9 +32,8 @@ const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
         <Image
           src={item.image}
           alt={item.name}
-          layout="fill"
-          objectFit="cover"
-          className="rounded-t"
+          fill
+          className="rounded-t object-cover"
         />
         {isSoldOut && (
           <div className="absolute inset-0 bg-orange-500 bg-opacity-50 flex items-center justify-center">

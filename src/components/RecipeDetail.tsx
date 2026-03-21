@@ -35,9 +35,8 @@ const RecipesDetails: React.FC<RecipesDetailsProps> = ({ recipe }) => {
           <Image
             src={recipe.image}
             alt={recipe.name}
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg"
+            fill
+            className="rounded-lg object-cover"
           />
         </div>
         <div className="md:w-1/2 md:pl-6 flex flex-col justify-center">
